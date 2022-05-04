@@ -10,17 +10,35 @@
     tools:context=".LinearLayoutWeightActivity">
 
     <LinearLayout
+        android:layout_weight="1"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <View
-            android:background="#FFFF00"
+            android:layout_weight="1"
+            android:background="@color/amarillo"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
         <View
-            android:background="#00FF00"
+            android:layout_weight="1"
+            android:background="@color/verde"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>
+    <View
+        android:layout_weight="1"
+        android:background="@color/lila"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <View
+        android:layout_weight="1"
+        android:background="@color/azulito"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <View
+        android:layout_weight="1"
+        android:background="@color/rojo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>
