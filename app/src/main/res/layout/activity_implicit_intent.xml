@@ -71,17 +71,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="Escribeme"
-        app:layout_constraintBottom_toTopOf="@+id/buttonContactMe"
-        app:layout_constraintEnd_toEndOf="@+id/buttonContactMe"/>
+        android:text="Enviar correo"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSms"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSms"/>
 
     <Button
-        android:id="@+id/buttonContactMe"
+        android:id="@+id/buttonSms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="63dp"
         android:layout_marginBottom="68dp"
-        android:text="Contactame"
+        android:text="Enviar SMS"
         app:layout_constraintBottom_toTopOf="@+id/imageButtonCamera"
         app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

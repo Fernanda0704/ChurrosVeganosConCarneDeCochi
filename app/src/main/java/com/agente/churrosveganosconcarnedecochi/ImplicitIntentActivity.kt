@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
+import java.net.URI
 
 class ImplicitIntentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,9 +20,27 @@ class ImplicitIntentActivity : AppCompatActivity() {
         agregarAccionAlBotonEmail()
         agregarAccionAlBotonPhone()
         agregarAccionAlBotonCamera()
+        agregarAccionAlBotonSms()
 
         // agregar soporte para que muestre el icono en la barra de accion
         supportActionBar!!.setIcon(R.mipmap.ic_launcher)
+    }
+
+    private fun agregarAccionAlBotonSms() {
+        // Obtener el enlace al botonSms
+        val botonSms = findViewById<Button>(R.id.buttonSms)
+        botonSms.setOnClickListener {
+            // definir el mensaje y número
+            val mensaje = "Mensaje enviado desde Android"
+            val numero = "+526871747704"
+            // definir el intent para enviar mensaje
+            val intentSms = Intent().apply {
+                data = Uri.parse("smsto:$numero")
+                action = Intent.ACTION_SENDTO
+                putExtra("sms_body", mensaje)
+            }
+            startActivity(intentSms)
+        }
     }
 
     private fun agregarAccionAlBotonCamera() {
