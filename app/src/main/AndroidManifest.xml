@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ChurrosVeganosConCarneDeCochi">
         <activity
+            android:name=".ImplicitIntentActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ActionBarMenuIconsActivity"
             android:exported="true">
             <intent-filter>
@@ -19,9 +28,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:parentActivityName=".ActionBarMenuIconsActivity"
             android:name=".TableLayoutCredentialActivity"
-            android:exported="true">
+            android:exported="true"
+            android:parentActivityName=".ActionBarMenuIconsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
