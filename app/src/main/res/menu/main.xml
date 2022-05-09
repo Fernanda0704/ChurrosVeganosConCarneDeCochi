@@ -11,7 +11,9 @@
         android:id="@+id/MenuItemMainIrA"
         android:title="Ir a"/>
     <item
-        app:showAsAction="never"
+        android:icon="@drawable/ic_acerca_de"
+        android:iconTint="@color/verde"
+        app:showAsAction="always"
         android:id="@+id/MenuItemMainAcercaDe"
         android:title="Acerca de "/>
 </menu>
