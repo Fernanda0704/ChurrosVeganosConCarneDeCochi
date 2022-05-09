@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/maria/AndroidStudioProjects/ChurrosVeganosConCarneDeCochi/app/src/main/res/layout/activity_action_bar_menu_icons.xml" value="0.33" />
         <entry key="..\:/Users/maria/AndroidStudioProjects/ChurrosVeganosConCarneDeCochi/app/src/main/res/layout/activity_frame_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/maria/AndroidStudioProjects/ChurrosVeganosConCarneDeCochi/app/src/main/res/layout/activity_linear_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/maria/AndroidStudioProjects/ChurrosVeganosConCarneDeCochi/app/src/main/res/layout/activity_linear_layout_parchis.xml" value="0.1" />
@@ -10,6 +11,7 @@
         <entry key="..\:/Users/maria/AndroidStudioProjects/ChurrosVeganosConCarneDeCochi/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/maria/AndroidStudioProjects/ChurrosVeganosConCarneDeCochi/app/src/main/res/layout/activity_table_layout_credential.xml" value="0.22" />
         <entry key="..\:/Users/maria/AndroidStudioProjects/ChurrosVeganosConCarneDeCochi/app/src/main/res/layout/activity_table_layout_parchis.xml" value="0.1" />
+        <entry key="..\:/Users/maria/AndroidStudioProjects/ChurrosVeganosConCarneDeCochi/app/src/main/res/menu/main.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
