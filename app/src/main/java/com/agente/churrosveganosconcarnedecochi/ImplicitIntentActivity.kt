@@ -4,6 +4,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
@@ -14,6 +15,28 @@ class ImplicitIntentActivity : AppCompatActivity() {
         setContentView(R.layout.activity_implicit_intent)
 
         agregarAccionAlBotonWeb()
+        agregarAccionAlBotonEmail()
+    }
+
+    private fun agregarAccionAlBotonEmail() {
+        // Obtener el enlace al botonEmail
+        val botonCorreo = findViewById<Button>(R.id.buttonEmail)
+        // asignar la accion al botonCorreo para que envie un mensaje por correo
+        botonCorreo.setOnClickListener {
+            val email = "maria.garcia.felix.2019@cetis108.edu.mx"
+            // inicializar el internet con el remitente
+            val intentEmail = Intent(Intent.ACTION_SEND, Uri.parse(email))
+            // agregar el asunto del correo
+            intentEmail.putExtra(Intent.EXTRA_SUBJECT, "Hola desde Android")
+            // agregar el mensaje de correo
+            intentEmail.putExtra(Intent.EXTRA_TEXT, "Responde por favor no te hagas cochi")
+            // agregar el destinatario
+            intentEmail.putExtra(Intent.EXTRA_EMAIL, "convenencieros@del.sexto.a.matutino")
+            // definir el tipo de contenido
+            intentEmail.type = "text/plain"
+            // ejecutar el intent
+            startActivity(Intent.createChooser(intentEmail, "Enviar con..."))
+        }
     }
 
     private fun agregarAccionAlBotonWeb() {
@@ -40,3 +63,5 @@ class ImplicitIntentActivity : AppCompatActivity() {
         }
     }
 }
+
+

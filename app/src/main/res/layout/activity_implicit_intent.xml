@@ -17,7 +17,7 @@
         android:ems="10"
         android:hint="Numero telefonico"
         android:inputType="phone"
-        app:layout_constraintBottom_toTopOf="@+id/buttonTextMe"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEmail"
         app:layout_constraintEnd_toStartOf="@+id/imageButtonPhone"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,7 +67,7 @@
         android:src="@drawable/ic_camera"/>
 
     <Button
-        android:id="@+id/buttonTextMe"
+        android:id="@+id/buttonEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
